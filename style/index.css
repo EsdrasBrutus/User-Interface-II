@@ -22,6 +22,7 @@ vertical-align: baseline;
 html{
     font-family: sans-serif;
     border: 1px solid;
+    background-color: lightgray;
 }
 
 header{
@@ -44,7 +45,7 @@ p{
     color: white;
     font-size: 1em;
 }
-.main-button{
+.button{
     color: white;
     font-family:sans-serif;
     font-size:1.5rem;
@@ -52,6 +53,7 @@ p{
     border:0px;
     padding:.5em 1.5em;
     margin: 1em;
+    text-decoration: none;
 }
 
 .nav{ 
@@ -134,16 +136,6 @@ footer{
 
 }
 
-.footer-button{
-    color: white;
-    font-family:sans-serif;
-    width: 9em;
-    font-size:1.5rem;
-    background-color:#BB2026;
-    border:0px;
-    padding:.5em 1.5em;
-    margin: 1em;
-}
 
 .social-media{
     display: flex;
