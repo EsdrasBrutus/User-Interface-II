@@ -125,7 +125,6 @@ p{
     padding: .3em;
 
 }
-
   
 footer{
     display: flex;
@@ -133,9 +132,8 @@ footer{
     background-color: gray;
     flex-direction: column;
     align-items: center;
-
+    
 }
-
 
 .social-media{
     display: flex;
