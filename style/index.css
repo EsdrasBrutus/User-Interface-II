@@ -39,13 +39,40 @@ h1{
 h2{
     font-size: 5em;
     color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 p{
     color: white;
     font-size: 1em;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
 .button{
+    color: white;
+    font-family:sans-serif;
+    font-size:1.5rem;
+    background-color:#BB2026;
+    border:0px;
+    padding:.5em 1.5em;
+    margin: 1em;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.footer_button{
     color: white;
     font-family:sans-serif;
     font-size:1.5rem;
@@ -81,6 +108,11 @@ p{
     
 }
 
+.big_img{
+    height: 90%;
+    width: 100%;
+}
+
 .big-item{
     display: flex;
     flex-direction: column;
@@ -89,10 +121,10 @@ p{
     height: 40em;
     width: 100em;
     background: lightgray;
-    background: url('https://picsum.photos/3000/?blur');
+   /* background: url('https://picsum.photos/3000/?blur');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: auto; */
 
 }
 
@@ -166,9 +198,22 @@ footer{
   }
 
   @media (max-width: 500px){
-    
+    h1{
+        display: none;
+    }
 
-  }
+    .nav{
+        
+        
+        flex-direction: column;
+        
+    }
+    
+    .big-picture {
+        
+        height: 2em; 
+
+    }
 
 
   
