@@ -64,15 +64,17 @@ p{
 }
 
 .nav .nav-item{
-    text-decoration: none;
-    color: black;
+    text-decoration: none; 
+    color: white;
     padding: .5em 1.5em;
-    border: solid 1px;
+    border-right: solid 1px black;  
     font-size: 1rem;
+    background-color: #BB2026;
 }
 
 
 .big-picture {
+
     display: flex;
     justify-content: center;
     padding-top: 2em;
@@ -157,3 +159,16 @@ footer{
     background: #007bb5;
     color: white;
   }
+
+  @media (max-width: 800px)  {
+
+
+  }
+
+  @media (max-width: 500px){
+    
+
+  }
+
+
+  
