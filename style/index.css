@@ -1,1 +1,341 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    border: 1px solid;
+    background-color: lightgray;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    height: 4em;
+    justify-content: space-between;
+
+    padding-bottom: 3em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 3vw;
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+p{
+    color: white;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.button{
+    color: white;
+    font-family:sans-serif;
+    font-size:2rem;
+    background-color:#BB2026;
+    border:0px;
+    padding:.5em 1.5em;
+    margin: 1em;
+    text-decoration: none;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.footer_button{
+    color: white;
+    font-family:sans-serif;
+    font-size:2rem;
+    background-color:#BB2026;
+    border:0px;
+    padding:.5em 1.5em;
+    margin: 1em;
+    text-decoration: none;
+}
+
+.nav{ 
+    display: flex;
+    height: fit-content;
+    margin-top: 0.9em;
+
+}
+
+.nav .nav-item{
+    text-decoration: none; 
+    color: white;
+    padding: .5em 1.5em;
+    border-right: solid 1px black;  
+    font-size: 1.7rem;
+    background-color: #BB2026;
+}
+
+
+.big-picture {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.big-img{
+
+    width: 100%;
+    object-fit: cover;
+}
+
+.big-item{
+    border: 1px solid;
+    height: 40em;
+    width: 100em;
+    /*
+    background: url('https://picsum.photos/3000/?blur');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+.container .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 33em;
+    width: 33em; 
+    
+    margin:2em 0em 2em 0rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+.container img {
+    margin: 0 3rem;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.container .caption{
+    font-size: 2em;
+    padding: .3em;
+
+}
+  
+footer{
+    display: flex;
+    border: dotted black 1px;
+    background-color: gray;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.social-media{
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.fa {
+    padding: 1em;
+    font-size: 1rem;
+    width: 1em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  @media (max-width: 800px)  {
+      
+    .nav-item{
+
+        width: 3em;
+        border: 1px solid black; 
+        text-align: center;
+            
+    }
+    
+    h2{
+        font-size: 2rem;
+        position: absolute;
+        top: 140px;
+
+    }
+
+    p{
+        text-align: center;
+        top: 175px;
+
+    }
+
+    .button{
+
+        font-size: 100%;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+
+    }
+
+    .big-picture {
+
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        height: 15em;
+        padding: 3em;
+    }
+
+
+    .big-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .container{
+        margin: 0 auto;
+    }
+
+    .container .item{
+        width: 40%;
+        height: 30%;
+    }
+
+    
+
+  }
+
+  @media (max-width: 500px){
+    h1{
+        text-align: center;
+    }
+
+    header{
+
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+        border: 1x solid black;
+    }
+
+
+    .nav{
+
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .nav-item{
+
+        width: 3em;
+        border: 1px solid black; 
+        text-align: center;
+            
+    }
+    
+    .big-picture {
+
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        height: 20em;
+        padding: 3em;
+
+    }
+
+    .big-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .big-item{
+        height: auto;
+    }
+
+    .button{
+
+        font-size: 100%;
+        position: absolute;
+        top: 340px;
+        left: 50%;
+        font-size: 1.5rem;
+
+    }
+
+    h2{
+
+        font-size: 7vw;
+        position: absolute;
+        top: 300px;
+
+    }
+
+    p{
+      display: none;
+
+    }
+
+    .container{
+        margin: 0 auto;
+    }
+
+    .container .item{
+        width: 40%;
+        height: 30%;
+    }
+        
+  }
+
+  
